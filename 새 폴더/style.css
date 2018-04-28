@@ -35,14 +35,14 @@ th, td{
 .first{
   padding-top: 50px;
 }
-.an_item{
+.IndexList{
 float: left;/*가로로 정렬*/
 padding-left: 7%;
 list-style:none;/*li태그의 점 없애기*/
 font-size: 30px;
 }
 
-#xxx{
+#GameList{
   border-right: 1px solid #e2e2e2;
   padding-top: 40px;
   position: relative;
@@ -75,8 +75,6 @@ padding-left: 30px;
   position: absolute;
   left: 300px;
   top : 200px;
-
-  max-width: 300%;
 }
 .tablepd{
   padding-top : 20px;

@@ -11,7 +11,7 @@
   <body>
     <h1><a href="MainPage.html"><img src="img\joystick.png"width="60" height="40">  <font color="red">  모바일 게임 매출 TOP 10</font></a></h1>
 
-  <div id = "xxx">
+  <div id = "GameList">
     <ul>
        <li class="first"><a href="1.html">1&emsp;&emsp;리니지M</a></li>
        <li><a href="2.html">2&emsp;&emsp;검은사막 모바일</a></li>
@@ -27,10 +27,10 @@
     </div>
       <div class= "bborder">
        <ul>
-         <li class ="an_item" onclick="doDisplay('1'); " style="cursor:pointer">게임소개</li>
-         <li class ="an_item" onclick="doDisplay('2');" style="cursor:pointer">기업소개</li>
-         <li class ="an_item" onclick="doDisplay('3');" style="cursor:pointer">게임평가</li>
-         <li class ="an_item" onclick="doDisplay('4');" style="cursor:pointer">댓글</li>
+         <li class ="IndexList" onclick="doDisplay('1'); " style="cursor:pointer">게임소개</li>
+         <li class ="IndexList" onclick="doDisplay('2');" style="cursor:pointer">기업소개</li>
+         <li class ="IndexList" onclick="doDisplay('3');" style="cursor:pointer">게임평가</li>
+         <li class ="IndexList" onclick="doDisplay('4');" style="cursor:pointer">댓글</li>
        </ul>
       </div>
       <div id ="introduce_game" class='embed-container'>
@@ -83,8 +83,10 @@
             	     <td>5,000만원 이상 ~ 7,000만원 미만<span style="color:gray"> (2018.2.)</span></td>
           	 </tr>
         </table>
-	 <div id="map"></div>
+      	  <div id="map">
+         </div>
 	 </div>
+   
    <div id ="app_evaluation" class = "evaluation_width" style="display:none">
 
     <script type="text/javascript">
