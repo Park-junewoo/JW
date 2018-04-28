@@ -9,11 +9,12 @@
     </script>
   </head>
   <body>
-    <h1><a href="MainPage.html"><img src="img\joystick.png"width="60" height="40">  <font color="red">  모바일 게임 매출 TOP 10</font></a></h1>
+    <h1><a href="MainPage.html"><img src="img\Wjoystick.png"width="60" height="40">  <font color="red">  모바일 게임 매출 TOP 10</font></a></h1>
 
   <div id = "GameList">
     <ul>
-      <li class="first"><a href="1.html">1&emsp;&emsp;리니지M</a></li>
+      <li><b><font size="6"><p><p><p><p>게임 매출 순위</font></b></li>
+      <li><a href="1.html">1&emsp;&emsp;리니지M</a></li>
       <li><a href="2.html">2&emsp;&emsp;검은사막 모바일</a></li>
       <li><a href="3.html">3&emsp;&emsp;세븐나이츠 for Kakao</a></li>
       <li><a href="4.html">4&emsp;&emsp;리니지2 레볼루션</a></li>
@@ -27,10 +28,10 @@
     </div>
       <div class= "bborder">
        <ul>
-         <li class ="IndexList" onclick="doDisplay('1'); " style="cursor:pointer">게임소개</li>
+         <li class ="IndexList" onclick="doDisplay('1');" style="cursor:pointer">게임소개</li>
          <li class ="IndexList" onclick="doDisplay('2');" style="cursor:pointer">기업소개</li>
          <li class ="IndexList" onclick="doDisplay('3');" style="cursor:pointer">게임평가</li>
-         <li class ="IndexList" onclick="doDisplay('4');" style="cursor:pointer">댓글</li>
+
        </ul>
       </div>
       <div id ="introduce_game" class='embed-container'>
@@ -42,9 +43,8 @@
       <div id ="introduce_company" class='emded-introduce'style="display:none">
 	       <table class= "tablepd" width = "600px"><!--너비를 600px 설정 -->
         <!--tr 열 td 행 이 두개는 tr 태그 하위에 위치 -->
-        <caption style='text-align:left'class = "font1"><pre><strong>    넷마블</pre></caption>
         <td colspan="2">
-  		2011년 11월 설립된 동사는 2018년 `넷마블 주식회사`로 사명을 변경하였고 모바일 게임의 개발 및 퍼블리싱 사업을 영위하고 있으며 동사 포함 43개의 계열회사가 존재<p>
+  		<b>넷마블</b><p>2011년 11월 설립된 동사는 2018년 `넷마블 주식회사`로 사명을 변경하였고 모바일 게임의 개발 및 퍼블리싱 사업을 영위하고 있으며 동사 포함 43개의 계열회사가 존재<p>
 	      </td>
          	<tr>
             	<td>기업</td>
@@ -100,61 +100,31 @@
      </script><div class="os_poll" data-path="/polls/2499609" id="os-widget-2499609"></div>
 
 
- <div id ="app_comment" class = "evaluation_width" style="display:none">
-   <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTY4OC8xMjIyNA==">
-   	<script type="text/javascript">
-      (function(d, s) {
-          var j, e = d.getElementsByTagName(s)[0];
-
-          if (typeof LivereTower === 'function') { return; }
-
-          j = d.createElement(s);
-          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-          j.async = true;
-
-          e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-   	</script>
-   </div>
-  </body>
-</html>
-
 <script type="text/javascript">
 
 function doDisplay(cnt){
     var con1 = document.getElementById("introduce_game");
     var con2 = document.getElementById("introduce_company");
     var con3 = document.getElementById("app_evaluation");
-    var con4 = document.getElementById("app_comment");
 
 
     if(cnt=='1'){
         con1.style.display = 'block';
 	      con2.style.display = 'none';
         con3.style.display = 'none';
-        con4.style.display = 'none';
 
     }
     else if(cnt=='2'){
         con1.style.display = 'none';
 	      con2.style.display = 'block';
         con3.style.display = 'none';
-        con4.style.display = 'none';
     }
     else if(cnt==3){
       con1.style.display = 'none';
       con2.style.display = 'none';
       con3.style.display = 'block';
-      con4.style.display = 'none';
-    }
-    else if(cnt==4){
-      con1.style.display = 'none';
-      con2.style.display = 'none';
-      con3.style.display = 'none';
-      con4.style.display = 'block';
     }
 }
-
 
 
 
