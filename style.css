@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1400px){
+  body{
+    position: absolute;  /*위치 고정*/
+    width : 1400px;
+    height: 100%;
+
+  }
+}
+
+body{
+  margin:0;
+  background : url(img/background.png)  repeat left top; /* 배경이미지 */
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+a:hover {color:white;}   /* hover은 커서 올려놓았을 때 */
+ul{
+  list-style:none;
+  background-color: pink;
+  margin : 0;
+}
+li{
+  padding : 15px;
+  padding-bottom: 20px;
+}
+h1{
+  font-size : 45px;
+  text-align:center;
+  background-color:#00FFFF;
+;
+  margin: 0;
+  padding: 50px;
+}
+th, td{
+  padding-right: 50px;
+  padding-top : 12px;
+}
+.IndexList{
+float: left;/*가로로 정렬*/
+list-style:none;/*li태그의 점 없애기*/
+font-size: 30px;
+padding-left: 80px;
+padding-right: 80px;
+padding-top: 50px;
+padding-bottom:50px;
+}
+
+#GameList{
+  float: left;
+  width : 350px;
+}
+.embed-container {
+position: relative;
+width: 900px;
+height: 600px;
+overflow: hidden;
+padding - top : 50px;
+}
+.embed-container iframe {
+position: absolute;
+width: 90%;
+height: 90%;
+}
+.emded-introduce{
+  position: absolute;
+  left: 400px;
+  top: 330px;
+}
+.tablepd{
+  width : 570px;
+  border : 1px dotted;
+}
+ #map {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        left : 620px;
+        top : 40px;
+}
+.font1{
+  font-size: 30px;
+  color: #19070B;
+  padding-left: 20px;
+}
+.evaluation_width{
+  position: absolute;
+  left : 400px;
+  top : 320px;
+  width : 58%;
+  height: 350px;
+}
