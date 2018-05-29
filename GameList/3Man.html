@@ -18,16 +18,27 @@
         <div id = "GameList">
           <ul>
              <li><b><font size="6"><p><p><p><p>게임 매출 순위</font></b></li>
-             <li><a href="Lineage.html">1&emsp;&emsp;리니지M</a></li>
-             <li><a href="Black_Desart.html">2&emsp;&emsp;검은사막 모바일</a></li>
-             <li><a href="Seven_Nights.html">3&emsp;&emsp;세븐나이츠 for Kakao</a></li>
-             <li><a href="Lineage2.html">4&emsp;&emsp;리니지2 레볼루션</a></li>
-             <li><a href="Ragnarok.html">5&emsp;&emsp;라그나로크M:영원한 사랑</a></li>
-             <li><a href="3Man.html">6&emsp;&emsp;삼국지M</a></li>
-             <li><a href="Every_Mable.html">7&emsp;&emsp;모두의마블 for Kakao</a></li>
-             <li><a href="Over_Hit.html">8&emsp;&emsp;오버히트</a></li>
-             <li><a href="Fate_Grand_Order.html">9&emsp;&emsp;페이트/그랜드 오더</a></li>
-             <li><a href="Mable_FutureFight.html">10&emsp;&ensp;MARVEL 퓨처파이트</a></li>
+               <script>
+               var h = new Object(); // or just {}
+               h['Lineage'] = '1&emsp;&emsp;리니지M';
+               h['Black_Desart'] = '2&emsp;&emsp;검은사막 모바일'
+               h['Seven_Nights'] = '3&emsp;&emsp;세븐나이츠 for Kakao'
+               h['Lineage2'] = '4&emsp;&emsp;리니지2 레볼루션';
+               h['Ragnarok'] = '5&emsp;&emsp;라그나로크M:영원한 사랑';
+               h['3Man'] = '6&emsp;&emsp;삼국지M';
+               h['Every_Mable'] = '7&emsp;&emsp;모두의마블 for Kakao';
+               h['Over_Hit'] = '8&emsp;&emsp;오버히트';
+               h['Fate_Grand_Order'] = '9&emsp;&emsp;페이트/그랜드 오더';
+               h['Mable_FutureFight'] = '10&emsp;&ensp;MARVEL 퓨처파이트';
+
+               // show the values stored
+               for (var k in h) {
+                   if (h.hasOwnProperty(k)) {
+                       document.write("<li><a href="+k+".html>"+h[k]+"</a></li>");
+                   }
+               }
+
+               </script>
           </ul>
           </div>
       </div>
