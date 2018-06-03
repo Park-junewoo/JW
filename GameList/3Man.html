@@ -7,11 +7,12 @@
     <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1sY-Ba08x9l4P7cGrQA3rP6v3YGvqCAY&callback=initMap">
    </script>
+   <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
     <div id="jb-container">
       <div id="jb-header">
-          <h1><a href="MainPage.html"><img src="img\Yjoystick.png"width="60" height="40">  <font color="white"> <font size = "45">  모바일 게임 매출<font color = "#FF0000"> TOP 10</font></font></font></a></h1>
+          <h1><a href="MainPage.html"><img src="img\joystick.png"width="60" height="40">  <font color="white"> <font size = "45">  모바일 게임 매출<font color = "#FF0000"> TOP 10</font></font></font></a></h1>
       </div>
 
       <div id="jb-list1">
@@ -111,7 +112,10 @@
         </div>
       </div>
       <div id="jb-footer">
-        <p>컴퓨터공학과</p>  <p>2014250024 박준우
+        <p>
+        <input type="text" style='border:none;font-size:18pt;background-color:transparent;'
+        size=22 name="dt_now" value="현재시간 로딩중..." />
+        <p>
       </div>
     </div>
   </body>
@@ -121,45 +125,6 @@
 
 
 <script type="text/javascript">
-
-function doDisplay(cnt){
-    var con1 = document.getElementById("introduce_game");
-    var con2 = document.getElementById("introduce_company");
-    var con3 = document.getElementById("app_evaluation");
-
-    var li1 =  document.getElementById("li1");
-    var li2 =  document.getElementById("li2");
-    var li3 =  document.getElementById("li3");
-
-    if(cnt=='1'){
-        con1.style.display = 'block';
-	      con2.style.display = 'none';
-        con3.style.display = 'none';
-        li1.style.background ="#01DFD7"
-        li2.style.background = ""
-        li3.style.background = ""
-    }
-    else if(cnt=='2'){
-        con1.style.display = 'none';
-	      con2.style.display = 'block';
-        con3.style.display = 'none';
-        li1.style.background = ""
-        li2.style.background = "#01DFD7"
-        li3.style.background = ""
-    }
-    else if(cnt==3){
-      con1.style.display = 'none';
-      con2.style.display = 'none';
-      con3.style.display = 'block';
-      li1.style.background = ""
-      li2.style.background = ""
-      li3.style.background = "#01DFD7"
-    }
-}
-
-
-
-
 
 function initMap() {
        var uluru = {lat: 37.507804, lng: 127.061494};
@@ -172,7 +137,6 @@ function initMap() {
          map: map
        });
      }
-
 
 
 </script>

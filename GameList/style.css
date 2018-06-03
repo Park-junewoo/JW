@@ -4,13 +4,13 @@
 }
 #jb-header {
   margin-bottom: 20px;
-  border: 1px solid #bcbcbc;
+  border: 1px solid gray;
 }
 #jb-list1 {
   padding: 20px;
   margin-bottom: 20px;
   float: left;
-  border: 1px solid #bcbcbc;
+  border: 1px solid gray;
 }
 #jb-list2 {
   width: 760px;
@@ -18,7 +18,7 @@
   margin-bottom: 20px;
   float: right;
   height: 70px;
-  border: 1px solid #bcbcbc;
+  border: 1px solid gray;
 }
 #jb-content {
   width: 760px;
@@ -26,18 +26,14 @@
   margin-bottom: 20px;
   float: right;
   height: 555px;
-  border: 1px solid #bcbcbc;
+  border: 1px solid gray;
 }
 #jb-footer {
   clear: both;
   padding-right: 20px;
-  border: 1px solid #bcbcbc;
+  border: 1px solid gray;
   text-align: right;
 }
-
-
-
-
 
 
 
@@ -70,7 +66,7 @@ li{
 h1{
   font-size : 45px;
   text-align:center;
-  background-color:#0B0B3B;
+
 ;
   margin: 0;
   padding: 50px;
