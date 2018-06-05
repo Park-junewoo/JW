@@ -1,4 +1,4 @@
-#jb-container {
+﻿#jb-container {
   width: 1230px;
   margin: 0px auto;
 }
@@ -37,14 +37,7 @@
 
 
 
-@media only screen and (max-width: 1400px){
-  body{
-    position: absolute;  /*위치 고정*/
-    width : 1400px;
-    height: 100%;
 
-  }
-}
 
 body{
   margin:0;

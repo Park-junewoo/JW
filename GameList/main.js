@@ -19,10 +19,6 @@ for (var k in h) {
   }
 }
 
-
-
-
-
 function doDisplay(cnt){
     var con1 = document.getElementById("introduce_game");
     var con2 = document.getElementById("introduce_company");
