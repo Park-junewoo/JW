@@ -1,15 +1,15 @@
 function gamelist(){
 var h = new Object(); // or just {}
-h['Lineage'] = '1&emsp;&emsp;리니지M';
-h['Black_Desart'] = '2&emsp;&emsp;검은사막 모바일'
-h['Seven_Nights'] = '3&emsp;&emsp;세븐나이츠 for Kakao'
-h['Lineage2'] = '4&emsp;&emsp;리니지2 레볼루션';
-h['Ragnarok'] = '5&emsp;&emsp;라그나로크M:영원한 사랑';
-h['3Man'] = '6&emsp;&emsp;삼국지M';
-h['Every_Mable'] = '7&emsp;&emsp;모두의마블 for Kakao';
-h['Over_Hit'] = '8&emsp;&emsp;오버히트';
-h['Fate_Grand_Order'] = '9&emsp;&emsp;페이트/그랜드 오더';
-h['Mable_FutureFight'] = '10&emsp;&ensp;MARVEL 퓨처파이트';
+h['Lineage'] = '1&emsp;리니지M';
+h['Black_Desart'] = '2&emsp;검은사막 모바일'
+h['Seven_Nights'] = '3&emsp;세븐나이츠 for Kakao'
+h['Lineage2'] = '4&emsp;리니지2 레볼루션';
+h['Ragnarok'] = '5&emsp;라그나로크M:영원한 사랑';
+h['3Man'] = '6&emsp;삼국지M';
+h['Every_Mable'] = '7&emsp;모두의마블 for Kakao';
+h['Over_Hit'] = '8&emsp;오버히트';
+h['Fate_Grand_Order'] = '9&emsp;페이트/그랜드 오더';
+h['Mable_FutureFight'] = '10&emsp;MARVEL 퓨처파이트';
 
 // show the values stored
 for (var k in h) {

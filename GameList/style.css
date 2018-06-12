@@ -5,12 +5,17 @@
 #jb-header {
   margin-bottom: 20px;
   border: 3px solid gray;
+  background-color : lightgray;
+  font-family: 'Gamja Flower', cursive;
 }
 #jb-list1 {
   padding: 20px;
   margin-bottom: 20px;
   float: left;
   border: 3px solid gray;
+  background-color : lightgray;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 22px;
 }
 #jb-list2 {
   width: 760px;
@@ -19,20 +24,24 @@
   float: right;
   height: 70px;
   border: 3px solid gray;
+  background-color : lightgray;
+  font-family: 'Gamja Flower', cursive;
 }
 #jb-content {
   width: 760px;
   padding: 20px;
   margin-bottom: 20px;
   float: right;
-  height: 555px;
+  height: 620px;
   border: 3px solid gray;
+  background-color : lightgray;
 }
 #jb-footer {
   clear: both;
   padding-right: 20px;
   border: 3px solid gray;
   text-align: right;
+  background-color : lightgray;
 }
 
 
@@ -56,7 +65,7 @@ a {
   color:black;
   text-decoration: none;
 }
-a:hover {font-size:19px;}   /* hover은 커서 올려놓았을 때 */
+a:hover {color:white}   /* hover은 커서 올려놓았을 때 */
 ul{
   list-style:none;
   margin : 0;
@@ -68,22 +77,21 @@ li{
 h1{
   font-size : 45px;
   text-align:center;
-
-;
   margin: 0;
   padding: 50px;
 }
 th, td{
   padding-right: 50px;
   padding-top : 12px;
-  font-size : 15px;
+  font-size : 20px;
+  font-family: 'Gamja Flower', cursive;
 }
 .IndexList{
 float: left;/*가로로 정렬*/
 list-style:none;/*li태그의 점 없애기*/
 font-size: 30px;
-padding-left: 35px;
-padding-right: 35px;
+padding-left: 45px;
+padding-right: 45px;
 }
 
 #GameList{
@@ -93,7 +101,7 @@ padding-right: 35px;
 .embed-container {
 position: relative;
 width: 850px;
-height: 600px;
+height: 680px;
 overflow: hidden;
 padding - top : 50px;
 }
@@ -106,7 +114,7 @@ height: 90%;
   width : 830px;
 }
  #map {
-        height: 130px;
+        height: 140px;
         width: 500px;
 }
 .font1{
@@ -116,4 +124,5 @@ height: 90%;
 }
 .evaluation_width{
 height: 100%;
+padding-top: 50px;
 }
