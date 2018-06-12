@@ -1,16 +1,16 @@
-﻿#jb-container {
+#jb-container {
   width: 1230px;
   margin: 0px auto;
 }
 #jb-header {
   margin-bottom: 20px;
-  border: 1px solid gray;
+  border: 3px solid gray;
 }
 #jb-list1 {
   padding: 20px;
   margin-bottom: 20px;
   float: left;
-  border: 1px solid gray;
+  border: 3px solid gray;
 }
 #jb-list2 {
   width: 760px;
@@ -18,7 +18,7 @@
   margin-bottom: 20px;
   float: right;
   height: 70px;
-  border: 1px solid gray;
+  border: 3px solid gray;
 }
 #jb-content {
   width: 760px;
@@ -26,22 +26,31 @@
   margin-bottom: 20px;
   float: right;
   height: 555px;
-  border: 1px solid gray;
+  border: 3px solid gray;
 }
 #jb-footer {
   clear: both;
   padding-right: 20px;
-  border: 1px solid gray;
+  border: 3px solid gray;
   text-align: right;
 }
 
 
 
+@media only screen and (max-width: 1400px){
+  body{
+    position: absolute;  /*위치 고정*/
+    width : 1400px;
+    height: 100%;
 
+  }
+}
 
 body{
   margin:0;
-  background : url(img/background.png)  repeat left top; /* 배경이미지 */
+  background : url(img/background.png);
+  min-height: 100%;
+  min-width: 100%;
 }
 a {
   color:black;
@@ -73,8 +82,8 @@ th, td{
 float: left;/*가로로 정렬*/
 list-style:none;/*li태그의 점 없애기*/
 font-size: 30px;
-padding-left: 65px;
-padding-right: 65px;
+padding-left: 35px;
+padding-right: 35px;
 }
 
 #GameList{

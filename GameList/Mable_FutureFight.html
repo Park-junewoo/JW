@@ -11,9 +11,8 @@
   </head>
   <body>
     <div id="jb-container">
-      <p>
       <div id="jb-header">
-          <h1><a href="MainPage.html"><img src="img\joystick.png"width="60" height="40">  <font color="white"> <font size = "45">  모바일 게임 매출<font color = "#FF0000"> TOP 10</font></font></font></a></h1>
+          <h1><a href="MainPage.html"><img src="img\joystick.png"width="60" height="40">  <font color="black"> <font size = "45">  모바일 게임 매출<font color = "#FF0000"> TOP 10</font></font></font></a></h1>
       </div>
 
       <div id="jb-list1">
@@ -30,6 +29,7 @@
         <li id = "li1" class ="IndexList" onclick="doDisplay('1'); "style="cursor:pointer">게임소개</li>
         <li id = "li2" class ="IndexList" onclick="doDisplay('2'); "style="cursor:pointer">기업소개</li>
         <li id = "li3" class ="IndexList" onclick="doDisplay('3'); "style="cursor:pointer">게임평가</li>
+        <li id = "li4" class ="IndexList" onclick="doDisplay('4'); "style="cursor:pointer">댓글작성</li>
       </div>
       <div id="jb-content">
         <div id ="introduce_game" class='embed-container'>
@@ -101,6 +101,23 @@
           }(document, 'script', 'os-widget-jssdk'));
           </script><div class="os_poll" data-path="/polls/2499612" id="os-widget-2499612"></div>
         </div>
+        <div id = "comment" style = "display:none">
+          <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTY4OC8xMjIyNA==">
+  <script type="text/javascript">
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
+
+         if (typeof LivereTower === 'function') { return; }
+
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
+
+         e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+       </script>
+        </div>
+      </div>
       </div>
       <div id="jb-footer">
         <p>

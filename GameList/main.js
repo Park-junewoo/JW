@@ -19,38 +19,63 @@ for (var k in h) {
   }
 }
 
+
+
+
+
 function doDisplay(cnt){
     var con1 = document.getElementById("introduce_game");
     var con2 = document.getElementById("introduce_company");
     var con3 = document.getElementById("app_evaluation");
-
+    var con4 = document.getElementById("comment");
     var li1 =  document.getElementById("li1");
     var li2 =  document.getElementById("li2");
     var li3 =  document.getElementById("li3");
+    var li4 =  document.getElementById("li4");
 
     if(cnt=='1'){
         con1.style.display = 'block';
 	      con2.style.display = 'none';
         con3.style.display = 'none';
-        li1.style.background ="#01DFD7"
+        con4.style.display = 'none';
+
+        li1.style.background ="#848484"
         li2.style.background = ""
         li3.style.background = ""
+        li4.style.background = ""
     }
     else if(cnt=='2'){
         con1.style.display = 'none';
 	      con2.style.display = 'block';
         con3.style.display = 'none';
+        con4.style.display = 'none';
+
         li1.style.background = ""
-        li2.style.background = "#01DFD7"
+        li2.style.background = "#848484"
         li3.style.background = ""
+        li4.style.background = ""
     }
     else if(cnt==3){
       con1.style.display = 'none';
       con2.style.display = 'none';
       con3.style.display = 'block';
+      con4.style.display = 'none';
+
       li1.style.background = ""
       li2.style.background = ""
-      li3.style.background = "#01DFD7"
+      li3.style.background = "#848484"
+      li4.style.background = ""
+    }
+    else if(cnt==4){
+      con1.style.display = 'none';
+      con2.style.display = 'none';
+      con3.style.display = 'none';
+      con4.style.display = 'block';
+
+      li1.style.background = ""
+      li2.style.background = ""
+      li3.style.background = ""
+      li4.style.background = "#848484"
     }
 }
 
@@ -62,3 +87,17 @@ window.onload = function() {
               target.value = (d.getFullYear()+". " + (d.getMonth() + 1) +". "+d.getDate()+". "+week[d.getDay()]+"  "+d.getHours()+" : "+d.getMinutes()+" : "+d.getSeconds());
   }, 1);
 }
+
+
+
+  (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
