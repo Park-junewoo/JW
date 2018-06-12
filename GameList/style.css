@@ -1,4 +1,4 @@
-#jb-container {
+﻿#jb-container {
   width: 1230px;
   margin: 0px auto;
 }
@@ -114,7 +114,7 @@ height: 90%;
   width : 830px;
 }
  #map {
-        height: 140px;
+        height: 125px;
         width: 500px;
 }
 .font1{
