@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>WelCome JW WebSite </title>
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=iaz5f21VCBPIVWKmzHLQ&submodules=geocoder"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
-</style>
-
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
+    <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1sY-Ba08x9l4P7cGrQA3rP6v3YGvqCAY&callback=initMap">
+   </script>
    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
@@ -76,7 +75,7 @@
             	 </tr>
           </table>
           <p>
-            <div id="nmap" style="width:800px; height:600px;">
+          <div id="map">
          </div>
 
         </div>
@@ -104,7 +103,7 @@
       <div id="jb-footer">
         <p>
         <input type="text" style='border:none;font-size:18pt;background-color:transparent;'
-        size=25 name="dt_now" value="현재시간 로딩중..." />
+        size=22 name="dt_now" value="현재시간 로딩중..." />
       </div>
       <p>
     </div>
@@ -127,13 +126,6 @@ function initMap() {
          map: map
        });
      }
-
-
-
-
-     new nhn.api.map.Map('nmap', { // nmap 은 지도가 생성될 요소의 id값 입니다 (원하시는 데로 네이밍!)
-       point : new nhn.api.map.LatLng(37.2900533, 127.1036797) // 위도, 경도 설정 (이 값을 가운데로 하여 지도 생성)
-     });
 
 
 </script>
