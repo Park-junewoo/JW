@@ -1,4 +1,5 @@
-﻿#jb-container {
+﻿
+#jb-container {
   width: 1230px;
   margin: 0px auto;
 }
@@ -42,6 +43,7 @@
   border: 3px solid gray;
   text-align: right;
   background-color : lightgray;
+  font-family: 'Gamja Flower', cursive;
 }
 
 

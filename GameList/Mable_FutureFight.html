@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <title>WelCome JW WebSite </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
-    <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1sY-Ba08x9l4P7cGrQA3rP6v3YGvqCAY&callback=initMap">
-   </script>
+    <style>
+  @import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+  </style>
    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
@@ -82,11 +81,9 @@
                 	     <td>3,000만원 ~ 5,000만원 미만<span style="color:gray"> (2018.2.)</span></td>
               	 </tr>
             </table>
-          <p>
-          <div id="map">
-         </div>
+            <table cellpadding="0" cellspacing="0" width="502"> <tr> <td style="border:1px solid #cecece;"><a href="https://map.naver.com/?query=&searchCoord=&tab=1&lng=177816be52404614600d201165e8a2b2&mapMode=0&mpx=f7f168882c332d353b4da61fcccbb4ca715ce1f43ba4b37cd26efc26293685fed5cc3d7122ad6c4f7330d057d382a684&pinId=38713438&lat=93c40fbd57254f638e8ab0b1776aa1c2&dlevel=14&enc=b64&__pinOnly=false&menu=location&__fromRestorer=true&pinType=site" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1528887269329_-1343607545" width="500" height="130" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr></table>
 
-        </div>
+          </div>
 
         <div id ="app_evaluation" class = "evaluation_width" style="display:none">
 
@@ -109,30 +106,10 @@
       <div id="jb-footer">
         <p>
           <input type="text" style='border:none;font-size:18pt;background-color:transparent;'
-          size=22 name="dt_now" value="현재시간 로딩중..." />
+          size=25 name="dt_now" value="현재시간 로딩중..." />
         <p>
       </div>
       <p>
     </div>
   </body>
 </html>
-
-
-
-
-<script type="text/javascript">
-
-
-function initMap() {
-       var uluru = {lat: 37.484995, lng: 126.896653};
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 16,
-         center: uluru
-       });
-       var marker = new google.maps.Marker({
-         position: uluru,
-         map: map
-       });
-     }
-
-</script>

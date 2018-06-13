@@ -1,4 +1,4 @@
-function gamelist(){
+﻿function gamelist(){
 var h = new Object(); // or just {}
 h['Lineage'] = '1&emsp;리니지M';
 h['Black_Desart'] = '2&emsp;검은사막 모바일'
@@ -82,22 +82,8 @@ function doDisplay(cnt){
 window.onload = function() {
   setInterval(function() {
     var d = new Date();
-    var week = new Array('Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat');
+    var week = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
     var target = document.getElementsByName("dt_now")[0];
               target.value = (d.getFullYear()+". " + (d.getMonth() + 1) +". "+d.getDate()+". "+week[d.getDay()]+"  "+d.getHours()+" : "+d.getMinutes()+" : "+d.getSeconds());
   }, 1);
 }
-
-
-
-  (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');

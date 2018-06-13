@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <title>WelCome JW WebSite </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
-    <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1sY-Ba08x9l4P7cGrQA3rP6v3YGvqCAY&callback=initMap">
-   </script>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+</style>
    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
@@ -84,9 +83,7 @@
                   	     <td>벤처기업</td>
                 	 </tr>
               </table>
-          <p>
-          <div id="map">
-         </div>
+        <table cellpadding="0" cellspacing="0" width="502"> <tr> <td style="border:1px solid #cecece;"><a href="https://map.naver.com/?query=&searchCoord=&tab=1&lng=6baf29e339601ddbdef9be29c7b16735&mapMode=0&mpx=5efca5bb0415c87638265d3ea35225fa444ff9a1107acefce3d2fd1dccdf8b135f45c2b978d8bdfb90c6ee9017ee0224&pinId=38404837&lat=99912a17c79b8daff0d2e15f973ce10b&dlevel=13&enc=b64&__pinOnly=false&menu=location&__fromRestorer=true&pinType=site" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1528887104887_-1595715115" width="500" height="130" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> </table>
 
         </div>
 
@@ -112,29 +109,10 @@
       <div id="jb-footer">
         <p>
           <input type="text" style='border:none;font-size:18pt;background-color:transparent;'
-          size=22 name="dt_now" value="현재시간 로딩중..." />
+          size=25 name="dt_now" value="현재시간 로딩중..." />
         <p>
       </div>
       <p>
     </div>
   </body>
 </html>
-
-
-
-
-<script type="text/javascript">
-
-function initMap() {
-       var uluru = {lat: 37.398376, lng: 126.966427};
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 16,
-         center: uluru
-       });
-       var marker = new google.maps.Marker({
-         position: uluru,
-         map: map
-       });
-     }
-
-</script>

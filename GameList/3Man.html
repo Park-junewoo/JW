@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <title>WelCome JW WebSite </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
-    <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1sY-Ba08x9l4P7cGrQA3rP6v3YGvqCAY&callback=initMap">
-   </script>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+</style>
    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
@@ -75,9 +74,7 @@
             	 </tr>
           </table>
           <p>
-          <div id="map">
-         </div>
-
+<table cellpadding="0" cellspacing="0" width="502"> <tr> <td style="border:1px solid #cecece;"><a href="https://map.naver.com/?searchCoord=98b2536b8f8d6a884aee21f7848829efc73d35ba5c64b9c039f0e878770a7fbe&query=7ISc7Jq47IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgOTjquLggNi05IO2LsOyVhOydtOu5jOuUqSA27Li1&tab=1&lng=5c7e764e98ecef3487fdd16bdcca1210&mapMode=0&mpx=53f29fe2d7ff56764ef294c4dcf6f5b43e56f0988351964b5392a603a9664caa948f4cbc8936dc94233abfcad92f5a00adc298991f3a8f6aae14ebee4521f8fe&lat=7f4a9ed30d47daab359bcd61b898ad35&dlevel=14&enc=b64&menu=location" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1528886844075_937810510" width="500" height="160" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> </table>
         </div>
 
         <div id ="app_evaluation" class = "evaluation_width" style="display:none">
@@ -109,23 +106,3 @@
     </div>
   </body>
 </html>
-
-
-
-
-<script type="text/javascript">
-
-function initMap() {
-       var uluru = {lat: 37.507804, lng: 127.061494};
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 16,
-         center: uluru
-       });
-       var marker = new google.maps.Marker({
-         position: uluru,
-         map: map
-       });
-     }
-
-
-</script>

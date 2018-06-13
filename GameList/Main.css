@@ -34,3 +34,24 @@ a {
   left : 47.5%;
   top : 80%;
 }
+.center{
+  margin : 0 auto;
+  width: 400px;
+  position: absolute;
+  top : 110px;
+  left : 450px;
+}
+.toggleBG{
+  background: #CCCCCC;
+   width: 70px;
+   height: 30px;
+   border: 1px solid #CCCCCC;
+   border-radius: 15px;
+ }
+.toggleFG{
+ background: #FFFFFF;
+ width: 30px;
+ height: 30px;
+ border: none; border-radius: 15px;
+ position: relative; left: 0px;
+}

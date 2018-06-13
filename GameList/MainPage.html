@@ -1,13 +1,15 @@
 ﻿<!doctype html>
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta charset="utf-8">
     <title>WelCome JW WebSite </title>
     <link rel="stylesheet" href="Main.css">
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
   </head>
   <body>
-    <h1><a href="MainPage.html"><img src="img\joystick.png"width="60" height="40"><font color="black"> <font size = "45">  모바일 게임 매출<font color = "#FF0000"> TOP 10</font></font></font></a></h1>
+    <h1><a href="javascript:div_show();"><img src="img\joystick.png"width="60" height="40"><font color="black"> <font size = "45">  모바일 게임 매출<font color = "#FF0000"> TOP 10</font></font></font></a></h1>
+
     <div>
       <script>
       var GameList = ['Lineage','Black_Desart','Seven_Nights','Lineage2','Ragnarok','Man3','Every_Mable','Over_Hit','Fate_Grand_Order','Mable_FutureFight'];
@@ -20,15 +22,18 @@
     <input type="image" src = "img/left.png" class ="btn" value="<"onclick="plusDivs(-1)"></a>
     <input type="image" src = "img/right.png" class ="btn" value=">"onclick="plusDivs(+1)"></a>
   </div>
-  </body>
+  <div id="test_div" class = "center" style="display:none">
+  <object width="500" height="500"><param name="movie" value="https://www.classicgamesarcade.com/games/galaga.swf"><embed src="https://www.classicgamesarcade.com/games/galaga.swf" type="application/x-shockwave-flash" width="430" height="500"></object>
+  </div>
+</body>
 </head>
-
 
 
 <script type="text/javascript">
 
 
 var slideIndex = 1;
+var aa = 0;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -45,5 +50,14 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block";
 }
-
+function div_show(){
+  if(aa==0){
+    document.getElementById("test_div").style.display = "block";
+    aa=1;
+  }
+  else{
+    document.getElementById("test_div").style.display = "none";
+    aa=0;
+  }
+}
 </script>

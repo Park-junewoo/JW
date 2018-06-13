@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <title>WelCome JW WebSite </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
-    <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1sY-Ba08x9l4P7cGrQA3rP6v3YGvqCAY&callback=initMap">
-   </script>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+</style>
    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
@@ -77,14 +76,8 @@
                  	     <td>평균연봉</td>
                   	     <td>5,000만원 이상 ~ 7,000만원 미만<span style="color:gray"> (2018.2.)</span></td>
                 	 </tr>
-                   <tr>
-                     <td>인증현황</td>
-                     <td>강소기업</td>
-                   </tr>
               </table>
-          <p>
-          <div id="map">
-         </div>
+        <table cellpadding="0" cellspacing="0" width="502"> <tr> <td style="border:1px solid #cecece;"><a href="https://map.naver.com/?query=&searchCoord=&tab=1&lng=9224005088e7dbd2b6b327cd6f92ca7d&mapMode=0&mpx=a2b6cbb19d48ecfd5b797195b0f26848c591569ca1b045ce3fb9a2b467fe453ea3a5f65011b34aa64c87aa552467f5c3&pinId=12128451&lat=8b2b2c5681d14031400497690cdd4169&dlevel=10&enc=b64&__pinOnly=false&menu=location&__fromRestorer=true&pinType=site" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1528887697156_1337300854" width="500" height="160" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> </table>
 
         </div>
 
@@ -108,29 +101,10 @@
       <div id="jb-footer">
         <p>
           <input type="text" style='border:none;font-size:18pt;background-color:transparent;'
-          size=22 name="dt_now" value="현재시간 로딩중..." />
+          size=25 name="dt_now" value="현재시간 로딩중..." />
         <p>
       </div>
       <p>
     </div>
   </body>
 </html>
-
-
-
-
-<script type="text/javascript">
-
-function initMap() {
-       var uluru = {lat: 37.402392, lng: 127.103396};
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 16,
-         center: uluru
-       });
-       var marker = new google.maps.Marker({
-         position: uluru,
-         map: map
-       });
-     }
-
-</script>
