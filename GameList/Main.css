@@ -35,9 +35,7 @@ a {
   top : 80%;
 }
 .center{
-  margin : 0 auto;
-  width: 400px;
+  padding-left: 32%;
   position: absolute;
-  top : 110px;
-  left : 450px;
+  top : 100px;
 }
