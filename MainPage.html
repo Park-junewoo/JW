@@ -1,35 +1,39 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta charset="utf-8">
     <title>WelCome JW WebSite </title>
     <link rel="stylesheet" href="Main.css">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
   </head>
   <body>
-    <h1><a href="MainPage.html"><img src="img\Wjoystick.png"width="60" height="40">  <font color="white">  모바일 게임 매출 TOP 10</font></a></h1>
+    <h1><a href="javascript:div_show();"><img src="img\joystick.png"width="60" height="40"><font color="black"> <font size = "45">  모바일 게임 매출<font color = "#FF0000"> TOP 10</font></font></font></a></h1>
+
     <div>
-    <a href="1.html"><img id="ImgSize" class="Slides" src="GameImg/1.png"></a>
-    <a href="2.html"><img id="ImgSize" class="Slides" src="GameImg/2.png"></a>
-    <a href="3.html"><img id="ImgSize" class="Slides" src="GameImg/3.png"></a>
-    <a href="4.html"><img id="ImgSize" class="Slides" src="GameImg/4.png"></a>
-    <a href="5.html"><img id="ImgSize" class="Slides" src="GameImg/5.png"></a>
-    <a href="6.html"><img id="ImgSize" class="Slides" src="GameImg/6.png"></a>
-    <a href="7.html"><img id="ImgSize" class="Slides" src="GameImg/7.png"></a>
-    <a href="8.html"><img id="ImgSize" class="Slides" src="GameImg/8.png"></a>
-    <a href="9.html"><img id="ImgSize" class="Slides" src="GameImg/9.png"></a>
-    <a href="10.html"><img id="ImgSize" class="Slides" src="GameImg/10.png"></a>
+      <script>
+      var GameList = ['Lineage','Black_Desart','Seven_Nights','Lineage2','Ragnarok','3Man','Every_Mable','Over_Hit','Fate_Grand_Order','Mable_FutureFight'];
+
+      for(var i in GameList){
+        document.write ("<a href="+GameList[i]+".html><img id='ImgSize' class='Slides' src='GameImg/"+GameList[i]+".png'></a>");
+        }
+        </script>
+        <p><p><p>
     <input type="image" src = "img/left.png" class ="btn" value="<"onclick="plusDivs(-1)"></a>
     <input type="image" src = "img/right.png" class ="btn" value=">"onclick="plusDivs(+1)"></a>
   </div>
-  </body>
+  <div id="test_div" class = "center" style="display:none">
+  <object width="600" height="600"><param name="movie" value="https://www.classicgamesarcade.com/games/galaga.swf"><embed src="https://www.classicgamesarcade.com/games/galaga.swf" type="application/x-shockwave-flash" width="430" height="500"></object>
+  </div>
+</body>
 </head>
-
 
 
 <script type="text/javascript">
 
 
 var slideIndex = 1;
+var aa = 0;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -46,5 +50,14 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block";
 }
-
+function div_show(){
+  if(aa==0){
+    document.getElementById("test_div").style.display = "block";
+    aa=1;
+  }
+  else{
+    document.getElementById("test_div").style.display = "none";
+    aa=0;
+  }
+}
 </script>
