@@ -39,7 +39,7 @@ function doDisplay(cnt){
         con3.style.display = 'none';
         con4.style.display = 'none';
 
-        li1.style.background ="#848484"
+        li1.style.background ="#A4A4A4"
         li2.style.background = ""
         li3.style.background = ""
         li4.style.background = ""
@@ -51,7 +51,7 @@ function doDisplay(cnt){
         con4.style.display = 'none';
 
         li1.style.background = ""
-        li2.style.background = "#848484"
+        li2.style.background = "#A4A4A4"
         li3.style.background = ""
         li4.style.background = ""
     }
@@ -63,7 +63,7 @@ function doDisplay(cnt){
 
       li1.style.background = ""
       li2.style.background = ""
-      li3.style.background = "#848484"
+      li3.style.background = "#A4A4A4"
       li4.style.background = ""
     }
     else if(cnt==4){
@@ -75,7 +75,7 @@ function doDisplay(cnt){
       li1.style.background = ""
       li2.style.background = ""
       li3.style.background = ""
-      li4.style.background = "#848484"
+      li4.style.background = "#A4A4A4"
     }
 }
 
