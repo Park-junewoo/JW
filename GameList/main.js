@@ -14,7 +14,8 @@ h['Mable_FutureFight'] = '10&emsp;MARVEL 퓨처파이트';
 // show the values stored
 for (var k in h) {
     if (h.hasOwnProperty(k)) {
-        document.write("<li><a href="+k+".html>"+h[k]+"</a></li>");
+        document.write("<li><a href="+k+".html id ="+k+">"+h[k]+"</a></li>");
+
     }
   }
 }
@@ -79,11 +80,40 @@ function doDisplay(cnt){
     }
 }
 
+
+
 window.onload = function() {
   setInterval(function() {
     var d = new Date();
-    var week = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+    var week = new Array('Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat');
     var target = document.getElementsByName("dt_now")[0];
               target.value = (d.getFullYear()+". " + (d.getMonth() + 1) +". "+d.getDate()+". "+week[d.getDay()]+"  "+d.getHours()+" : "+d.getMinutes()+" : "+d.getSeconds());
   }, 1);
+}
+
+
+
+  (function(d, s) {
+        //이 부분을 작성 시 시계의 로딩없이 출력
+   })
+
+
+
+
+   function insert1(){
+   	var d = new Date();
+   	var a=d.getFullYear()+"-" + (d.getMonth() + 1) +"-"+d.getDate()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+   	var base= document.getElementById("insert_div").innerHTML;
+   	a = a+"  ::  "+document.getElementById("txt1").value+"<br>";
+   	document.getElementById("insert_div").innerHTML=base+"<br>"+a;
+   	document.getElementById("txt1").value="";
+   }
+
+
+
+   function Enter_Check(){
+        // 엔터키의 코드는 13입니다.
+    if(event.keyCode == 13){
+         insert1();  // 실행할 이벤트
+    }
 }

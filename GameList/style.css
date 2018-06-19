@@ -1,4 +1,4 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css?family=Jua');
 #jb-container {
   width: 1230px;
   margin: 0px auto;
@@ -70,7 +70,7 @@ a {
   color:black;
   text-decoration: none;
 }
-a:hover {color:white}   /* hover은 커서 올려놓았을 때 */
+a:hover {color:blue}   /* hover은 커서 올려놓았을 때 */
 ul{
   list-style:none;
   margin : 0;
@@ -89,8 +89,8 @@ h1{
 th, td{
   padding-right: 50px;
   padding-top : 12px;
-  font-size : 20px;
-  font-family: 'Gamja Flower', cursive;
+  font-size : 17px;
+  font-family: 'Jua', sans-serif;
 }
 .IndexList{
 float: left;/*가로로 정렬*/
@@ -134,4 +134,26 @@ height: 90%;
 .evaluation_width{
 height: 100%;
 padding-top: 50px;
+}
+input {
+  border-radius: 5px;
+  border: solid 2px white;
+  padding: 15px;
+  margin : 0px;
+  size : 20px;
+  font-size : 20px;
+}
+.commentDesign{
+  overflow:auto;
+  width:750px;
+  height:550px;
+  font-family: 'Gamja Flower', cursive;
+  font-size : 25px;
+  size :  30px;
+}
+.txtsize{
+  width: 600px;
+}
+.btnsize{
+  width: 120px;
 }
