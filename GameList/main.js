@@ -36,7 +36,7 @@ function doDisplay(cnt){
 
     if(cnt=='1'){
         con1.style.display = 'block';
-	      con2.style.display = 'none';
+        con2.style.display = 'none';
         con3.style.display = 'none';
         con4.style.display = 'none';
 
@@ -47,7 +47,7 @@ function doDisplay(cnt){
     }
     else if(cnt=='2'){
         con1.style.display = 'none';
-	      con2.style.display = 'block';
+        con2.style.display = 'block';
         con3.style.display = 'none';
         con4.style.display = 'none';
 
@@ -85,7 +85,7 @@ function doDisplay(cnt){
 window.onload = function() {
   setInterval(function() {
     var d = new Date();
-    var week = new Array('Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat');
+    var week = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
     var target = document.getElementsByName("dt_now")[0];
               target.value = (d.getFullYear()+". " + (d.getMonth() + 1) +". "+d.getDate()+". "+week[d.getDay()]+"  "+d.getHours()+" : "+d.getMinutes()+" : "+d.getSeconds());
   }, 1);
